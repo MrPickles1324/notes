@@ -6,3 +6,9 @@ abstract class HomeEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
+
+class UpdateNotes extends HomeEvent {}
+
+class CreateNote extends HomeEvent {}
+
+class DeleteNote extends HomeEvent {}

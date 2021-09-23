@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
-import 'package:flutter/foundation.dart';
 
 class Note extends Equatable {
   final String title;
@@ -12,6 +11,12 @@ class Note extends Equatable {
     required this.dateCreated,
     required this.content,
   });
+
+  static Note get empty => Note(
+        title: "title",
+        dateCreated: DateTime(0),
+        content: "",
+      );
 
   @override
   List<Object> get props => [title, dateCreated, content];

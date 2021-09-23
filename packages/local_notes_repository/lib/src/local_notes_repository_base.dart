@@ -5,15 +5,7 @@ import 'models.dart';
 
 class LocalNotesRepository {
   LocalNotesRepository({required this.onDbInitialized}) {
-    initDB().then(
-      (value) => createNote(
-        Note(
-          title: "test",
-          dateCreated: DateTime.now(),
-          content: "test Content",
-        ),
-      ),
-    );
+    initDB();
   }
 
   Function onDbInitialized;

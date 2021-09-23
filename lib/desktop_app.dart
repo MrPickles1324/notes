@@ -8,7 +8,7 @@ class DesktopApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text("Not implemented"),
+          child: Text("Desktop app is not implemented"),
         ),
       ),
     );
